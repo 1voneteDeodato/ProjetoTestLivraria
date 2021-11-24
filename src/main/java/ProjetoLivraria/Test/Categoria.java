@@ -1,23 +1,18 @@
 package ProjetoLivraria.Test;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
-@Entity
-public class CadastroDeCategoria {
+public class Categoria {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     public Long id;
     public String nome;
 
-    public CadastroDeCategoria(Long id, String nome) {
+    public Categoria(){
 
+    }
+
+    public Categoria(Long id, String nome) {
         this.id = id;
         this.nome = nome;
-
     }
 
     public Long getId() {
@@ -35,4 +30,7 @@ public class CadastroDeCategoria {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+
 }
+
